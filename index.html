@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Generador de Números Aleatorios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="header">Generador de Números Aleatorios</h3>
+        <div class="row">
+            <div class="col s6 mt10">
+                <form id="random-number-form" class="col s12">
+                    <div class="input-field">
+                        <input type="number" id="min" placeholder="Mínimo">
+                        <label for="min">Mínimo</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="number" id="max" placeholder="Máximo">
+                        <label for="max">Máximo</label>
+                    </div>
+                    <p class="switch">
+                        <label>
+                            Sin Repetición
+                            <input type="checkbox" id="with-repetition">
+                            <span class="lever"></span>
+                            Con Repetición
+                        </label>
+                    </p>
+                    <button class="btn waves-effect waves-light" type="submit">Generar Número Aleatorio</button>
+                </form>
+            </div>
+            <div class="col s6">
+                <h4>Resultados <button id="clear-results" class="btn waves-effect waves-light red">Limpiar Resultados</button></h4>
+                
+                <ul id="results-list" class="collection"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
